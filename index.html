@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join the Saint-André Fire Department</title>
+  <style>
+    html, body { margin: 0; padding: 0; background: #000; }
+    .poster {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 0;
+    }
+    .poster img { width: 100%; height: auto; display: block; }
+
+    /* mailto hitbox over the whole EMAIL US cell (bottom-left) */
+    .email-link {
+      position: absolute;
+      left: 3.5%;
+      top: 86%;
+      width: 37%;
+      height: 7.5%;
+    }
+
+    /* clickable hitbox over the whole MORE INFORMATION block (bottom-right) */
+    .moreinfo-link {
+      position: absolute;
+      left: 41.5%;
+      top: 86%;
+      width: 55%;
+      height: 7.5%;
+    }
+  </style>
+</head>
+<body>
+  <div class="poster">
+    <img src="poster.jpg" alt="Why join the Saint-André Fire Department? Email ycaron@nb.sympatico.ca or click for more information.">
+
+    <!-- EMAIL US -->
+    <a class="email-link"
+       href="mailto:ycaron@nb.sympatico.ca?subject=Interested%20in%20Joining%20the%20Saint-Andr%C3%A9%20Fire%20Department"
+       aria-label="Email the Saint-André Fire Department to join"></a>
+
+    <!-- MORE INFORMATION  (doc must be shared "Anyone with the link" or this 404s for visitors) -->
+    <a class="moreinfo-link"
+       href="https://docs.google.com/document/d/1MVvKzA9_e4NpiJf5yIwJczPoGKRY8tKjUSAQVr1TrGQ/edit"
+       target="_blank" rel="noopener"
+       aria-label="More information about joining (opens document)"></a>
+  </div>
+</body>
+</html>
